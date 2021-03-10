@@ -13,3 +13,107 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper.
 --->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+        }
+        
+        .box-one{
+            background-color:rgb(218,250,212) ;
+            width: 100px;
+            height: 110px;
+            border: 10px solid rgb(173,216,230);
+            outline: 4px solid black;
+            margin-left: 600px;
+
+        }
+        .main-one{
+            text-align: center;
+        }
+        .main-two{
+            text-align: center;
+            margin-top: 60px;
+        }
+        .main-two-box-1{
+            border: 1px solid gray;
+            width: 600px;
+            display: flex;
+            margin-left: 350px;
+        }
+        .one,.two,.three{
+            background-color: gray;
+            width: 180px;
+            height: 100px;
+            margin: 10px;
+
+        }
+        .main-two-box-2{
+            border: 1px solid gray;
+            width: 600px;
+            margin-left: 350px;
+        }
+        .main-two-box-2-one{
+           display: flex;
+        }
+        .main-two-box-3{
+            width: 600px;
+            border: 1px solid gray;
+            margin-left: 350px;
+            display: flex;
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Box Model, Box-sizing & Box-shadow</h1>
+    </header>
+    <main>
+        <div class="main-one">
+            <h3>Exercise1</h3>
+          
+            <div class="box-one"></div>
+
+        </div>
+        <div class="main-two">
+            <h3>Exercise2</h3>
+            <p>No border on these boxes.</p>
+            <div class="main-two-box-1">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <p>1px border on these boxes.</p>
+            <div class="main-two-box-2">
+                <div class="main-two-box-2-one">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </div>
+                <div class="three"></div>
+            </div>
+
+            <p>1px border on these boxes but they are in the same line..</p>
+            <div class="main-two-box-3">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

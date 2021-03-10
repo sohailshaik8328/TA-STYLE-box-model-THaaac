@@ -7,11 +7,138 @@
 3. After the paragraph add an image having all the corner rounded.
 4. Below the image, there should be a circle with red background.
 5. At the bottom of the page, there must be a footer containing few links.
-6. The H1 has 1px red solid borders, background color #D18C1D, and 10px of space between the content and the border (padding)
-7. The paragraph is contained in 600px by 400px boxes with 2px black dotted borders and background color #D1D631
+6. The H1 has 1px red solid borders, background color #D18C1D, and 10px of space between the 
+   content and the border (padding)
+7. The paragraph is contained in 600px by 400px boxes with 2px black dotted borders and 
+   background color #D1D631
 8. Links have a 3px blue dashed border on the bottom only and background color #A1A1A1
 
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper.
 
 --->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.heading{
+    border: 1px solid red;
+    background-color: #D18C1D;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+.para{
+    border: 2px dotted black;
+    width: 600px;
+    height: 400px;
+    background-color: #D1D631;
+    margin-left: 350px;
+
+}
+.image{
+    border-radius: 10px;
+    margin-left: 500px;
+}
+.circle{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    margin-left: 50px;
+}
+footer{
+    background-color: #A1A1A1;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+a{
+    border-bottom: 3px dashed blue;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Alt Campus</h1>
+    </header>
+    <main>
+        <div class="para">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, velit laborum. Veniam praesentium dicta consequatur dolor natus eum, dolore cumque maiores ea cum itaque sapiente nesciunt. Alias, cumque culpa! Corporis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis, eius, tenetur officia esse facere vitae ullam eos id ipsum animi? Recusandae, architecto iure dolorum consectetur non quis unde explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam ipsum labore incidunt assumenda! Nesciunt explicabo voluptate vero quis ex, ratione eligendi magnam excepturi rerum voluptatibus aperiam nam laborum quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque architecto temporibus fuga cum repellat quia doloribus provident in ipsa? Repellat ipsam dolorum cupiditate, ipsum sapiente aperiam facilis minima provident!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti magni, perspiciatis, praesentium suscipit dolore repellendus nisi sed dolores soluta harum ab veniam neque corporis iste, aliquam voluptate incidunt hic!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sunt exercitationem ipsam maiores quas hic sequi sint porro velit, repellat eos. Non alias maiores unde nulla blanditiis, laudantium commodi nam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatibus mollitia alias eius corrupti eligendi ea facere possimus neque aliquam quidem dicta velit ducimus, consequatur quibusdam beatae? Recusandae, aliquid ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vitae esse illum minima ducimus quibusdam distinctio? Exercitationem iure repudiandae voluptatum, quasi harum labore dicta assumenda asperiores pariatur, praesentium suscipit facilis.</p>
+
+        </div>
+        <div class="image">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcdS8f6L5Aonc9oUP3UfD2PAPUmqF-_IBcw&usqp=CAU" alt="">
+             <div class="circle"></div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Linkdin</a>
+        <a href="#">Git Hub</a>
+        <a href="#">Instagram</a>
+    </footer>
+</body>
+</html>
